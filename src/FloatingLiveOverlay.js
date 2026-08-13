@@ -63,7 +63,7 @@ const FloatingLiveOverlay = () => {
   // Request permissions untuk overlay
   useEffect(() => {
     if (Platform.OS === 'android') {
-      requestOverlayPermission();
+      // requestOverlayPermission(); // TEMP: dinonaktifkan, SYSTEM_ALERT_WINDOW bukan runtime permission
     }
   }, []);
 
