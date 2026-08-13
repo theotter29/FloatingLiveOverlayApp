@@ -6,6 +6,9 @@ buildscript {
         targetSdkVersion = 34
         ndkVersion = "25.1.8937393"
         kotlinVersion = "2.1.0"
+    AsyncStorage = [
+        kotlinVersion: "2.1.0"
+    ]
     }
     repositories {
         google()
