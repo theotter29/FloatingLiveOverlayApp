@@ -110,6 +110,11 @@ const FloatingLiveOverlay = () => {
     setAppState(nextAppState);
   };
 
+  // Tampilkan bubble begitu komponen ini dimount (App.tsx sudah kontrol render lewat isLive)
+  useEffect(() => {
+    setIsFloating(true);
+  }, []);
+
   const requestOverlayPermission = async () => {
     try {
       if (Platform.OS === 'android' && Platform.Version >= 30) {
