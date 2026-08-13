@@ -19,9 +19,12 @@ import {
   Share
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import webSocketService from './services/WebSocketService';
+
+const THEME_STORAGE_KEY = '@floating_overlay_theme';
 
 const THEME_STORAGE_KEY = '@floating_overlay_theme';
 
@@ -58,6 +61,15 @@ const FloatingLiveOverlay = () => {
   const [showRecap, setShowRecap] = useState(false);
   const [peakViewers, setPeakViewers] = useState(0);
   const pulseAnim = useRef(new Animated.Value(1)).current;
+
+  // Muat tema tersimpan saat aplikasi dibuka
+  useEffect(() => {
+    AsyncStorage.getItem(THEME_STORAGE_KEY)
+      .then((saved) => {
+        if (saved && THEMES[saved]) setTheme(saved);
+      })
+      .catch((err) => console.warn('Gagal memuat tema:', err));
+  }, []);
 
   // Muat tema tersimpan saat aplikasi dibuka
   useEffect(() => {
