@@ -18,9 +18,12 @@ import {
   AppState,
   Share
 } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import webSocketService from './services/WebSocketService';
+
+const THEME_STORAGE_KEY = '@floating_overlay_theme';
 
 const THEMES = {
   orange: { primary: '#FF6B35', primaryLight: 'rgba(255, 107, 53, 0.95)', primarySoft: 'rgba(255, 107, 53, 0.15)' },
@@ -55,6 +58,15 @@ const FloatingLiveOverlay = () => {
   const [showRecap, setShowRecap] = useState(false);
   const [peakViewers, setPeakViewers] = useState(0);
   const pulseAnim = useRef(new Animated.Value(1)).current;
+
+  // Muat tema tersimpan saat aplikasi dibuka
+  useEffect(() => {
+    AsyncStorage.getItem(THEME_STORAGE_KEY)
+      .then((saved) => {
+        if (saved && THEMES[saved]) setTheme(saved);
+      })
+      .catch((err) => console.warn('Gagal memuat tema:', err));
+  }, []);
 
   // Pan Responder untuk drag
   const pan = useRef(new Animated.ValueXY()).current;
@@ -210,6 +222,7 @@ const FloatingLiveOverlay = () => {
   const closeRecapAndExit = () => {
     setShowRecap(false);
     setIsFloating(false);
+    setPeakViewers(0);
   };
 
   // Update duration
@@ -412,7 +425,12 @@ const FloatingLiveOverlay = () => {
               { backgroundColor: THEMES[key].primary },
               theme === key && styles.themeSwatchActive,
             ]}
-            onPress={() => setTheme(key)}
+            onPress={() => {
+              setTheme(key);
+              AsyncStorage.setItem(THEME_STORAGE_KEY, key).catch((err) =>
+                console.warn('Gagal menyimpan tema:', err)
+              );
+            }}
           >
             {theme === key && <MaterialIcons name="check" size={22} color="#fff" />}
           </TouchableOpacity>
