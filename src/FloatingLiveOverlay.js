@@ -81,9 +81,21 @@ const FloatingLiveOverlay = () => {
 
     const unsubNotif = webSocketService.on('notification', (data) => {
       setNotifications((prev) => [
-        { id: Date.now(), type: data.type, user: data.user, text: data.text, time: 'Baru saja' },
+        {
+          id: Date.now(),
+          type: data.type,
+          user: data.user,
+          text: data.text,
+          time: 'Baru saja',
+          platform: data.platform || 'tiktok',
+          amount: data.amount,
+        },
         ...prev,
       ].slice(0, 20));
+
+      if (data.type === 'donation' || data.type === 'gift') {
+        setStats((prev) => ({ ...prev, gifts: prev.gifts + 1 }));
+      }
     });
 
     return () => {
@@ -149,43 +161,6 @@ const FloatingLiveOverlay = () => {
   const stopFloatingWindow = () => {
     setIsFloating(false);
   };
-
-  // Simulasi real-time notifications
-  useEffect(() => {
-    const interval = setInterval(() => {
-      const types = ['like', 'follow', 'share', 'gift'];
-      const users = ['Budi_456', 'Maya_789', 'Andi_01', 'Citra_222'];
-      const messages = [
-        '❤️ Menyukai live Anda',
-        '👥 Mulai mengikuti Anda',
-        '📤 Membagikan live Anda',
-        '🎁 Mengirim hadiah'
-      ];
-
-      const randomType = types[Math.floor(Math.random() * types.length)];
-      const randomUser = users[Math.floor(Math.random() * users.length)];
-      const randomMsg = messages[types.indexOf(randomType)];
-
-      const newNotif = {
-        id: Math.random(),
-        type: randomType,
-        user: randomUser,
-        text: randomMsg,
-        time: 'Baru saja'
-      };
-
-      setNotifications(prev => [newNotif, ...prev.slice(0, 9)]);
-
-      // Update stats
-      if (randomType === 'like') {
-        setStats(prev => ({ ...prev, likes: prev.likes + 1 }));
-      } else if (randomType === 'follow') {
-        setStats(prev => ({ ...prev, viewers: prev.viewers + 1 }));
-      }
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, []);
 
   // Update duration
   useEffect(() => {
@@ -297,6 +272,7 @@ const FloatingLiveOverlay = () => {
               {notif.type === 'follow' && '👥'}
               {notif.type === 'share' && '📤'}
               {notif.type === 'gift' && '🎁'}
+              {notif.type === 'donation' && '💰'}
             </Text>
             <View style={styles.notifContent}>
               <Text style={styles.notifUser}>{notif.user}</Text>
