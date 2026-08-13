@@ -60,7 +60,7 @@ class WebSocketService {
     this.setupDataListeners();
   }
 
-  private setupDataListeners() {
+  setupDataListeners() {
     // Live stats update
     this.socket.on('stats_update', (data) => {
       this.emit('stats', {

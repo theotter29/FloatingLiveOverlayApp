@@ -19,6 +19,7 @@ import {
 } from 'react-native';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import webSocketService from './services/WebSocketService';
 
 const FloatingLiveOverlay = () => {
   const [isFloating, setIsFloating] = useState(false);
@@ -65,6 +66,30 @@ const FloatingLiveOverlay = () => {
     if (Platform.OS === 'android') {
       // requestOverlayPermission(); // TEMP: dinonaktifkan, SYSTEM_ALERT_WINDOW bukan runtime permission
     }
+  }, []);
+
+  // Connect ke WebSocket server
+  useEffect(() => {
+    const SERVER_URL = 'https://liveoverlayserver-production.up.railway.app';
+    const BROADCAST_ID = 'broadcast_001';
+
+    webSocketService.connect(SERVER_URL, BROADCAST_ID, 'tiktok');
+
+    const unsubStats = webSocketService.on('stats', (data) => {
+      setStats((prev) => ({ ...prev, ...data }));
+    });
+
+    const unsubNotif = webSocketService.on('notification', (data) => {
+      setNotifications((prev) => [
+        { id: Date.now(), type: data.type, user: data.user, text: data.text, time: 'Baru saja' },
+        ...prev,
+      ].slice(0, 20));
+    });
+
+    return () => {
+      unsubStats();
+      unsubNotif();
+    };
   }, []);
 
   // Monitor app state untuk floating window
