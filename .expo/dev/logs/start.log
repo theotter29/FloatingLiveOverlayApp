@@ -1,0 +1,28 @@
+{"_e":"root:init","_t":1786701753222,"format":"v0-jsonl","version":"57.0.14"}
+{"_e":"env:mode","_t":1786701753226,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1786701753245,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1786701754991,"mode":"development","web":false,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1786701757857,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:server_log","_t":1786701758597,"level":"error","data":["An unknown error occurred while installing React Native DevTools. Details:\n\nCannot read properties of undefined (reading 'arm64')"]}
+{"_e":"expo:dev-tools-plugin:load","_t":1786701761231,"plugins":[]}
+{"_e":"root:init","_t":1786702032637,"format":"v0-jsonl","version":"57.0.14"}
+{"_e":"env:mode","_t":1786702032643,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1786702032660,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1786702034290,"mode":"development","web":false,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1786702037433,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:server_log","_t":1786702038045,"level":"error","data":["An unknown error occurred while installing React Native DevTools. Details:\n\nCannot read properties of undefined (reading 'arm64')"]}
+{"_e":"expo:dev-tools-plugin:load","_t":1786702040495,"plugins":[]}
+{"_e":"root:init","_t":1786702068187,"format":"v0-jsonl","version":"57.0.14"}
+{"_e":"env:mode","_t":1786702068194,"nodeEnv":"production","babelEnv":"production","mode":"production"}
+{"_e":"env:load","_t":1786702068206,"mode":"production","files":[],"env":{}}
+{"_e":"devserver:start","_t":1786702069655,"mode":"production","web":false,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1786702072188,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:server_log","_t":1786702072685,"level":"error","data":["An unknown error occurred while installing React Native DevTools. Details:\n\nCannot read properties of undefined (reading 'arm64')"]}
+{"_e":"expo:dev-tools-plugin:load","_t":1786702075236,"plugins":[]}
+{"_e":"root:init","_t":1786702106071,"format":"v0-jsonl","version":"57.0.14"}
+{"_e":"env:mode","_t":1786702106075,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1786702106087,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1786702107111,"mode":"development","web":false,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1786702108872,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:server_log","_t":1786702109229,"level":"error","data":["An unknown error occurred while installing React Native DevTools. Details:\n\nCannot read properties of undefined (reading 'arm64')"]}
+{"_e":"expo:dev-tools-plugin:load","_t":1786702111753,"plugins":[]}
