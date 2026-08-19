@@ -1,0 +1,314 @@
+╔══════════════════════════════════════════════════════════════╗
+║  🎯 TERMUX QUICK REFERENCE - Floating Overlay Server       ║
+╚══════════════════════════════════════════════════════════════╝
+
+═══════════════════════════════════════════════════════════════
+🚀 QUICK START (Copy-Paste)
+═══════════════════════════════════════════════════════════════
+
+1. Setup awal (PERTAMA KALI SAJA):
+─────────────────────────────────────
+pkg update && pkg upgrade -y
+pkg install nodejs-lts
+mkdir -p ~/live-overlay-server
+cd ~/live-overlay-server
+npm init -y
+npm install express socket.io axios cors dotenv
+
+2. Copy LiveServer.js ke folder ~/live-overlay-server
+   (Download atau paste file)
+
+3. Run server:
+─────────────────────────────────────
+node LiveServer.js
+
+4. Check IP (dari terminal baru):
+─────────────────────────────────────
+hostname -I
+
+5. Dari device lain, test:
+─────────────────────────────────────
+curl http://192.168.x.x:3000/health
+
+
+═══════════════════════════════════════════════════════════════
+📋 COMMAND REFERENCE
+═══════════════════════════════════════════════════════════════
+
+PACKAGE MANAGEMENT:
+  pkg update              → Update package list
+  pkg upgrade -y          → Upgrade all packages
+  pkg install <pkg>       → Install package
+  pkg list-installed      → List installed packages
+  pkg search <query>      → Search package
+
+NODE.JS:
+  node --version          → Check Node.js version
+  npm --version           → Check npm version
+  npm init -y             → Initialize npm project
+  npm install <pkg>       → Install package
+  npm list                → List dependencies
+  npm start               → Run 'start' script from package.json
+
+FILE MANAGEMENT:
+  ls                      → List files
+  ls -la                  → List files with details
+  cd <folder>             → Change directory
+  pwd                     → Print current directory
+  mkdir <folder>          → Create folder
+  nano <file>             → Edit file (Ctrl+X to save)
+  cat <file>              → Show file content
+  rm <file>               → Delete file
+  rm -r <folder>          → Delete folder
+  cp <source> <dest>      → Copy file
+  mv <source> <dest>      → Move file
+
+NETWORK:
+  hostname -I             → Show device IP
+  ifconfig                → Network info
+  ping <host>             → Test connection
+  curl <url>              → Fetch URL
+  netstat -tuln           → Show open ports
+
+PROCESS:
+  top                     → Show running processes
+  ps aux                  → List all processes
+  kill <PID>              → Kill process
+  bg                      → Run in background
+  fg                      → Bring to foreground
+
+STORAGE:
+  df -h                   → Disk space
+  du -sh <folder>         → Folder size
+  free -h                 → Memory usage
+
+
+═══════════════════════════════════════════════════════════════
+🐛 COMMON ERRORS & FIXES
+═══════════════════════════════════════════════════════════════
+
+ERROR 1: "npm: command not found"
+──────────────────────────────────
+FIX:  pkg install nodejs-lts
+      node --version
+
+ERROR 2: "Cannot find module 'express'"
+──────────────────────────────────────
+CAUSE: Belum install dependencies
+FIX:   cd ~/live-overlay-server
+      npm install express socket.io axios cors
+
+ERROR 3: "EADDRINUSE: address already in use :::3000"
+──────────────────────────────────────────────────
+CAUSE: Port 3000 sudah dipakai
+FIX:   1. Kill process lama:
+          netstat -tuln | grep 3000
+          kill <PID>
+       2. Atau ganti port di .env:
+          PORT=3001
+
+ERROR 4: "LiveServer.js: command not found"
+───────────────────────────────────────────
+CAUSE: File tidak ada atau path salah
+FIX:   1. Check file ada:
+          ls -la LiveServer.js
+       2. Pastikan di folder yang benar:
+          pwd
+          cd ~/live-overlay-server
+
+ERROR 5: "connect ECONNREFUSED 127.0.0.1:3000"
+──────────────────────────────────────────────
+CAUSE: Server tidak running
+FIX:   1. Buka terminal baru
+       2. node LiveServer.js
+       3. Check tidak ada error
+
+ERROR 6: Device tidak bisa connect ke server
+───────────────────────────────────────────
+CAUSE: IP salah atau firewall
+FIX:   1. Check IP:
+          hostname -I
+       2. Update di React Native app:
+          serverURL = 'http://192.168.x.x:3000'
+       3. Pastikan device & phone satu WiFi
+       4. Disable firewall (temporary untuk testing)
+
+
+═══════════════════════════════════════════════════════════════
+🔥 USEFUL COMMANDS FOR SERVER
+═══════════════════════════════════════════════════════════════
+
+RUN SERVER & KEEP RUNNING:
+──────────────────────────
+node LiveServer.js              → Run (Ctrl+C to stop)
+nohup node LiveServer.js &      → Run & detach
+nohup node LiveServer.js > server.log 2>&1 &  → Run with logging
+
+MONITOR LOGS:
+─────────────
+tail -f server.log              → Watch logs real-time
+tail -20 server.log             → Last 20 lines
+cat server.log | grep ERROR     → Search errors
+clear && node LiveServer.js      → Clear & run
+
+KEEP RUNNING SAAT SCREEN OFF:
+──────────────────────────────
+pkg install termux-wake-lock
+termux-wake-lock node LiveServer.js
+
+USE SCREEN SESSION (RECOMMENDED):
+──────────────────────────────────
+pkg install screen
+screen -S live-server           → Create session
+node LiveServer.js              → Run
+Ctrl+A, D                       → Detach (keep running)
+screen -r live-server           → Reattach
+screen -ls                      → List sessions
+
+TEST SERVER:
+─────────────
+curl http://localhost:3000/health    → From same phone
+curl http://192.168.x.x:3000/health  → From other device
+curl http://192.168.x.x:3000/api/broadcasts  → List broadcasts
+
+
+═══════════════════════════════════════════════════════════════
+📱 FOLDER STRUCTURE
+═══════════════════════════════════════════════════════════════
+
+~/live-overlay-server/
+├── LiveServer.js          ← Main server file
+├── package.json           ← Dependencies config
+├── package-lock.json      ← Lock file (auto)
+├── .env                   ← Environment config
+├── node_modules/          ← Installed packages (auto)
+└── server.log             ← Logs (if any)
+
+PATHS IN TERMUX:
+───────────────
+~               = /data/data/com.termux/files/home
+~/storage       = Access to Android storage
+~/storage/downloads  = Downloads folder
+
+
+═══════════════════════════════════════════════════════════════
+🔗 CONNECT REACT NATIVE APP
+═══════════════════════════════════════════════════════════════
+
+1. Get your Termux IP:
+   ─────────────────
+   hostname -I
+   
+   Output: 192.168.1.5
+
+2. Update FloatingLiveOverlay.js:
+   ──────────────────────────────
+   const serverURL = 'http://192.168.1.5:3000';
+   
+   webSocketService.connect(serverURL, 'broadcast_123', 'tiktok');
+
+3. Make sure both devices on same WiFi network
+
+4. Test connection from device:
+   ──────────────────────────────
+   (Use curl or browser)
+   http://192.168.1.5:3000/health
+
+
+═══════════════════════════════════════════════════════════════
+💡 PRO TIPS
+═══════════════════════════════════════════════════════════════
+
+1. Keep Termux running:
+   - Don't swipe away from Termux
+   - Lock phone with screen on
+   - Or use termux-wake-lock
+
+2. Multiple terminals:
+   - Press Volume Up + N for new session
+   - Useful for monitoring while running server
+
+3. Faster development:
+   - Use "npm install" instead of "node LiveServer.js"
+   - Create alias in ~/.bashrc for quick commands
+   - Backup .env and LiveServer.js
+
+4. Save bandwidth:
+   - Update only when needed (pkg update)
+   - Install minimal packages
+
+5. Debugging:
+   - Always check server.log
+   - Use curl to test endpoints
+   - Monitor with "top" while running
+
+6. Remote access:
+   - Use SSH: pkg install openssh
+   - Then access from laptop/PC
+   - sshd to start SSH server
+
+
+═══════════════════════════════════════════════════════════════
+🎯 WORKFLOW UNTUK DEVELOPMENT
+═══════════════════════════════════════════════════════════════
+
+Terminal 1: Run Server
+──────────────────────
+$ cd ~/live-overlay-server
+$ node LiveServer.js
+(keep this running)
+
+Terminal 2: Check Status & Test
+────────────────────────────────
+(Press Volume Up + N for new terminal)
+$ hostname -I              (get IP)
+$ curl http://localhost:3000/health
+(test dari laptop/device lain)
+
+Terminal 3: Monitor Logs (optional)
+───────────────────────────────────
+$ cd ~/live-overlay-server
+$ tail -f server.log
+
+
+═══════════════════════════════════════════════════════════════
+✅ CHECKLIST SEBELUM LIVE STREAMING
+═══════════════════════════════════════════════════════════════
+
+□ Server running (Terminal 1)
+□ IP address verified (hostname -I)
+□ React Native app connected to correct IP
+□ WebSocket connection established (check logs)
+□ Test stats update working
+□ Test notifications working
+□ Check phone battery (plug in charger)
+□ Disable auto-sleep
+□ Keep Termux in foreground
+□ Monitor logs for errors
+
+
+═══════════════════════════════════════════════════════════════
+🆘 NEED HELP?
+═══════════════════════════════════════════════════════════════
+
+1. Check logs:
+   tail -f server.log
+
+2. Test connection:
+   curl http://localhost:3000/health
+
+3. Verify Node.js:
+   node --version
+   npm --version
+
+4. Check port usage:
+   netstat -tuln | grep 3000
+
+5. Read full guide:
+   TERMUX_SETUP.md (in this folder)
+
+
+╔══════════════════════════════════════════════════════════════╗
+║  Happy Streaming! 🎥✨                                       ║
+║  Made with ❤️ for Indonesian Content Creators               ║
+╚══════════════════════════════════════════════════════════════╝

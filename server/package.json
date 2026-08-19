@@ -1,0 +1,18 @@
+{
+  "name": "floating-live-overlay-server",
+  "version": "1.0.0",
+  "description": "Backend Socket.io server buat FloatingLiveOverlayApp - real-time live stats (TikTok/Instagram/YouTube)",
+  "main": "LiveServer.js",
+  "scripts": {
+    "start": "node LiveServer.js",
+    "dev": "node LiveServer.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "http": "^0.0.1-security",
+    "socket.io": "^4.8.3",
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7"
+  }
+}

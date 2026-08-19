@@ -26,3 +26,162 @@
 {"_e":"metro:config","_t":1786702108872,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
 {"_e":"metro:server_log","_t":1786702109229,"level":"error","data":["An unknown error occurred while installing React Native DevTools. Details:\n\nCannot read properties of undefined (reading 'arm64')"]}
 {"_e":"expo:dev-tools-plugin:load","_t":1786702111753,"plugins":[]}
+{"_e":"root:init","_t":1786703083392,"format":"v0-jsonl","version":"57.0.14"}
+{"_e":"env:mode","_t":1786703083397,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1786703083410,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1786703084664,"mode":"development","web":false,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1786703087096,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:server_log","_t":1786703087568,"level":"error","data":["An unknown error occurred while installing React Native DevTools. Details:\n\nCannot read properties of undefined (reading 'arm64')"]}
+{"_e":"expo:dev-tools-plugin:load","_t":1786703089557,"plugins":[]}
+{"_e":"root:init","_t":1786703346253,"format":"v0-jsonl","version":"57.0.14"}
+{"_e":"env:mode","_t":1786703346258,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1786703346274,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1786703347633,"mode":"development","web":false,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1786703350090,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:server_log","_t":1786703350666,"level":"error","data":["An unknown error occurred while installing React Native DevTools. Details:\n\nCannot read properties of undefined (reading 'arm64')"]}
+{"_e":"expo:dev-tools-plugin:load","_t":1786703352638,"plugins":[]}
+{"_e":"root:init","_t":1786703472006,"format":"v0-jsonl","version":"57.0.14"}
+{"_e":"env:mode","_t":1786703472010,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1786703472022,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1786703473188,"mode":"development","web":false,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1786703475350,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:server_log","_t":1786703475732,"level":"error","data":["An unknown error occurred while installing React Native DevTools. Details:\n\nCannot read properties of undefined (reading 'arm64')"]}
+{"_e":"expo:dev-tools-plugin:load","_t":1786703477677,"plugins":[]}
+{"_e":"root:init","_t":1786709959784,"format":"v0-jsonl","version":"57.0.14"}
+{"_e":"env:mode","_t":1786709959785,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1786709959794,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1786709960462,"mode":"development","web":false,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1786709961586,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:server_log","_t":1786709961977,"level":"error","data":["An unknown error occurred while installing React Native DevTools. Details:\n\nCannot read properties of undefined (reading 'arm64')"]}
+{"_e":"expo:dev-tools-plugin:load","_t":1786709963262,"plugins":[]}
+{"_e":"metro:instantiate","_t":1786709975986,"atlas":false,"workers":6,"host":"::","port":8081}
+{"_e":"root:init","_t":1786711438024,"format":"v0-jsonl","version":"57.0.14"}
+{"_e":"env:mode","_t":1786711438029,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1786711438050,"mode":"development","files":[],"env":{}}
+{"_e":"root:init","_t":1786712123009,"format":"v0-jsonl","version":"57.0.14"}
+{"_e":"env:mode","_t":1786712123014,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1786712123030,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1786712126878,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1786712129138,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:server_log","_t":1786712129742,"level":"error","data":["An unknown error occurred while installing React Native DevTools. Details:\n\nCannot read properties of undefined (reading 'arm64')"]}
+{"_e":"expo:dev-tools-plugin:load","_t":1786712131410,"plugins":[]}
+{"_e":"root:init","_t":1786712534454,"format":"v0-jsonl","version":"57.0.14"}
+{"_e":"env:mode","_t":1786712534457,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1786712534471,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1786712537632,"mode":"development","web":false,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1786712539381,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:server_log","_t":1786712539863,"level":"error","data":["An unknown error occurred while installing React Native DevTools. Details:\n\nCannot read properties of undefined (reading 'arm64')"]}
+{"_e":"expo:dev-tools-plugin:load","_t":1786712541197,"plugins":[]}
+{"_e":"root:init","_t":1786712670202,"format":"v0-jsonl","version":"57.0.14"}
+{"_e":"env:mode","_t":1786712670205,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1786712670214,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1786712675535,"mode":"development","web":false,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"root:init","_t":1786712693147,"format":"v0-jsonl","version":"57.0.14"}
+{"_e":"env:mode","_t":1786712693149,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1786712693158,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1786712695628,"mode":"development","web":false,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"root:init","_t":1786737693497,"format":"v0-jsonl","version":"57.0.15"}
+{"_e":"env:mode","_t":1786737693500,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1786737693509,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1786737694395,"mode":"development","web":false,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1786737696515,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:server_log","_t":1786737696953,"level":"error","data":["An unknown error occurred while installing React Native DevTools. Details:\n\nCannot read properties of undefined (reading 'arm64')"]}
+{"_e":"expo:dev-tools-plugin:load","_t":1786737698236,"plugins":[]}
+{"_e":"metro:instantiate","_t":1786737698811,"atlas":false,"workers":6,"host":"::","port":8081}
+{"_e":"root:init","_t":1786738112361,"format":"v0-jsonl","version":"57.0.15"}
+{"_e":"env:mode","_t":1786738112366,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1786738112376,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1786738113363,"mode":"development","web":false,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1786738114985,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:server_log","_t":1786738115462,"level":"error","data":["An unknown error occurred while installing React Native DevTools. Details:\n\nCannot read properties of undefined (reading 'arm64')"]}
+{"_e":"expo:dev-tools-plugin:load","_t":1786738116736,"plugins":[]}
+{"_e":"metro:instantiate","_t":1786738128651,"atlas":false,"workers":1,"host":"::","port":8081}
+{"_e":"root:init","_t":1786738525427,"format":"v0-jsonl","version":"57.0.15"}
+{"_e":"env:mode","_t":1786738525431,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1786738525444,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1786738526233,"mode":"development","web":false,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1786738527419,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:server_log","_t":1786738527772,"level":"error","data":["An unknown error occurred while installing React Native DevTools. Details:\n\nCannot read properties of undefined (reading 'arm64')"]}
+{"_e":"expo:dev-tools-plugin:load","_t":1786738528843,"plugins":[]}
+{"_e":"metro:instantiate","_t":1786738540312,"atlas":false,"workers":1,"host":"::","port":8081}
+{"_e":"root:init","_t":1786778339303,"format":"v0-jsonl","version":"57.0.15"}
+{"_e":"env:mode","_t":1786778339308,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1786778339323,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1786778340609,"mode":"development","web":false,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1786778342699,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:server_log","_t":1786778343336,"level":"error","data":["An unknown error occurred while installing React Native DevTools. Details:\n\nCannot read properties of undefined (reading 'arm64')"]}
+{"_e":"expo:dev-tools-plugin:load","_t":1786778345303,"plugins":[]}
+{"_e":"metro:instantiate","_t":1786778364637,"atlas":false,"workers":1,"host":"::","port":8081}
+{"_e":"metro:client_log","_t":1786778395169,"level":"error","data":["Project is incompatible with this version of Expo Go\n\nThis project requires a newer version of Expo Go.\n\nHow to fix this error:\nDownload the latest version of Expo Go from the Play Store."]}
+{"_e":"metro:client_log","_t":1786778557945,"level":"error","data":["Project is incompatible with this version of Expo Go\n\nThis project requires a newer version of Expo Go.\n\nHow to fix this error:\nDownload the latest version of Expo Go from the Play Store."]}
+{"_e":"root:init","_t":1786778947718,"format":"v0-jsonl","version":"57.0.15"}
+{"_e":"env:mode","_t":1786778947725,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1786778947743,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1786778952606,"mode":"development","web":false,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1786778954648,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:server_log","_t":1786778955263,"level":"error","data":["An unknown error occurred while installing React Native DevTools. Details:\n\nCannot read properties of undefined (reading 'arm64')"]}
+{"_e":"expo:dev-tools-plugin:load","_t":1786778956671,"plugins":[]}
+{"_e":"root:init","_t":1786779061673,"format":"v0-jsonl","version":"57.0.15"}
+{"_e":"env:mode","_t":1786779061678,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1786779061692,"mode":"development","files":[],"env":{}}
+{"_e":"root:init","_t":1786779178101,"format":"v0-jsonl","version":"57.0.15"}
+{"_e":"env:mode","_t":1786779178103,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1786779178113,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1786779179176,"mode":"development","web":false,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1786779181142,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:server_log","_t":1786779181684,"level":"error","data":["An unknown error occurred while installing React Native DevTools. Details:\n\nCannot read properties of undefined (reading 'arm64')"]}
+{"_e":"expo:dev-tools-plugin:load","_t":1786779183415,"plugins":[]}
+{"_e":"metro:instantiate","_t":1786779184170,"atlas":false,"workers":1,"host":"::","port":8082}
+{"_e":"root:init","_t":1786779613843,"format":"v0-jsonl","version":"57.0.15"}
+{"_e":"env:mode","_t":1786779613849,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1786779613862,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1786779615144,"mode":"development","web":false,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1786779617187,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:server_log","_t":1786779617771,"level":"error","data":["An unknown error occurred while installing React Native DevTools. Details:\n\nCannot read properties of undefined (reading 'arm64')"]}
+{"_e":"expo:dev-tools-plugin:load","_t":1786779619522,"plugins":[]}
+{"_e":"metro:instantiate","_t":1786779620267,"atlas":false,"workers":1,"host":"::","port":8082}
+{"_e":"root:init","_t":1786780005886,"format":"v0-jsonl","version":"57.0.15"}
+{"_e":"env:mode","_t":1786780005892,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1786780005913,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1786780007690,"mode":"development","web":false,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1786780010794,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:server_log","_t":1786780011514,"level":"error","data":["An unknown error occurred while installing React Native DevTools. Details:\n\nCannot read properties of undefined (reading 'arm64')"]}
+{"_e":"expo:dev-tools-plugin:load","_t":1786780014800,"plugins":[]}
+{"_e":"metro:instantiate","_t":1786780015929,"atlas":false,"workers":1,"host":"::","port":8082}
+{"_e":"metro:bundling:started","_t":1786780216699,"id":"1","platform":"android","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:done","_t":1786780344660,"id":"1","total":679,"ms":127957.568492}
+{"_e":"metro:client_log","_t":1786780346832,"level":"error","data":["[Invariant Violation: \"main\" has not been registered. This can happen if:\n* Metro (the local dev server) is run from the wrong folder. Check if Metro is running, stop it and restart it in the current project.\n* A module failed to load due to an error and `AppRegistry.registerComponent` wasn't called.]"]}
+{"_e":"root:init","_t":1786780715708,"format":"v0-jsonl","version":"57.0.15"}
+{"_e":"env:mode","_t":1786780715719,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1786780715744,"mode":"development","files":[],"env":{}}
+{"_e":"metro:bundling:started","_t":1786780735072,"id":"3","platform":"android","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:done","_t":1786780735192,"id":"3","total":1,"ms":119.28776}
+{"_e":"metro:client_log","_t":1786780736990,"level":"error","data":["[Invariant Violation: \"main\" has not been registered. This can happen if:\n* Metro (the local dev server) is run from the wrong folder. Check if Metro is running, stop it and restart it in the current project.\n* A module failed to load due to an error and `AppRegistry.registerComponent` wasn't called.]"]}
+{"_e":"root:init","_t":1786780804455,"format":"v0-jsonl","version":"57.0.15"}
+{"_e":"env:mode","_t":1786780804458,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1786780804472,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1786780806045,"mode":"development","web":false,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1786780809323,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"metro:server_log","_t":1786780810071,"level":"error","data":["An unknown error occurred while installing React Native DevTools. Details:\n\nCannot read properties of undefined (reading 'arm64')"]}
+{"_e":"expo:dev-tools-plugin:load","_t":1786780813170,"plugins":[]}
+{"_e":"metro:instantiate","_t":1786780814245,"atlas":false,"workers":1,"host":"::","port":8082}
+{"_e":"metro:bundling:started","_t":1786781317910,"id":"5","platform":"android","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:done","_t":1786781318139,"id":"5","total":1,"ms":226.20375}
+{"_e":"metro:client_log","_t":1786781321242,"level":"warn","data":["The global process.env.EXPO_OS is not defined. This should be inlined by babel-preset-expo during transformation."]}
+{"_e":"metro:client_log","_t":1786781321360,"level":"warn","data":["SafeAreaView has been deprecated and will be removed in a future release. Please use 'react-native-safe-area-context' instead. See https://github.com/AppAndFlow/react-native-safe-area-context"]}
+{"_e":"root:init","_t":1786781338507,"format":"v0-jsonl","version":"57.0.15"}
+{"_e":"env:mode","_t":1786781338513,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1786781338539,"mode":"development","files":[],"env":{}}
+{"_e":"metro:bundling:started","_t":1786781354669,"id":"9","platform":"android","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:done","_t":1786781354781,"id":"9","total":1,"ms":111.6375}
+{"_e":"metro:client_log","_t":1786781357786,"level":"warn","data":["The global process.env.EXPO_OS is not defined. This should be inlined by babel-preset-expo during transformation."]}
+{"_e":"metro:client_log","_t":1786781357900,"level":"warn","data":["SafeAreaView has been deprecated and will be removed in a future release. Please use 'react-native-safe-area-context' instead. See https://github.com/AppAndFlow/react-native-safe-area-context"]}
+{"_e":"metro:client_log","_t":1786781378361,"level":"log","data":["✓ WebSocket connected"]}
+{"_e":"metro:server_log","_t":1786781420110,"level":"info","data":["Launching DevTools..."]}
+{"_e":"metro:server_log","_t":1786781420116,"level":"error","data":["Error launching DevTools: edgeFinder[(0 , utils_1.getPlatform)(...)] is not a function"]}
+{"_e":"metro:server_log","_t":1786781428169,"level":"info","data":["Launching DevTools..."]}
+{"_e":"metro:server_log","_t":1786781428170,"level":"error","data":["Error launching DevTools: edgeFinder[(0 , utils_1.getPlatform)(...)] is not a function"]}
+{"_e":"root:init","_t":1786781505653,"format":"v0-jsonl","version":"57.0.15"}
+{"_e":"env:mode","_t":1786781505656,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1786781505665,"mode":"development","files":[],"env":{}}
+{"_e":"metro:client_log","_t":1786781525819,"level":"warn","data":["Already connected to WebSocket"]}
